@@ -233,6 +233,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@stitches/react@npm:^1.2.8":
+  version: 1.2.8
+  resolution: "@stitches/react@npm:1.2.8"
+  peerDependencies:
+    react: ">= 16.3.0"
+  checksum: 029795323cdedb5599ec0636526fc233b2cf41fa9c1f4a704b1f7f457c6170053384a7430afed45e25f73e348d7c391cf1379bc079943cd9cad44302234a5244
+  languageName: node
+  linkType: hard
+
 "@swc/helpers@npm:0.4.14":
   version: 0.4.14
   resolution: "@swc/helpers@npm:0.4.14"
@@ -1546,6 +1555,7 @@ __metadata:
   resolution: "ignite-shop@workspace:."
   dependencies:
     "@rocketseat/eslint-config": ^1.2.0
+    "@stitches/react": ^1.2.8
     "@types/node": 18.15.3
     "@types/react": 18.0.28
     "@types/react-dom": 18.0.11
