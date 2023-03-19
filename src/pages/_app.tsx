@@ -4,7 +4,7 @@ import Image from 'next/image'
 import logoImg from '../assets/logo.svg'
 
 import { GlobalStyles } from '@/styles/global'
-import { Container, Header } from '@/styles/app'
+import { Container, Header } from '../styles/pages/app'
 
 GlobalStyles()
 
