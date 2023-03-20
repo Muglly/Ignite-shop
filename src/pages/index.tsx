@@ -57,3 +57,9 @@ export default function Home() {
     </S.HomeContainer>
   )
 }
+
+export const getSeverSideProps = () => {
+  return {
+    props: 
+  }
+}
