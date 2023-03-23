@@ -7,8 +7,6 @@ import { useKeenSlider } from 'keen-slider/react'
 import * as S from '@/styles/pages/home'
 import Stripe from 'stripe'
 
-import Camiseta1 from '../assets/camisetas/1.png'
-
 interface HomeProps {
   products: {
     id: string
@@ -59,7 +57,10 @@ export const getStaticProps: GetStaticProps = async () => {
       id: product.id,
       name: product.name,
       imageUrl: product.images[0],
-      price: price.unit_amount,
+      price: new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+      }).format(price.unit_amount / 100),
     }
   })
 
