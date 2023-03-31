@@ -30,9 +30,9 @@ export default function Product({ product }: ProductProps) {
         priceId: product.defaultPriceId,
       })
 
-      const { checkourUrl } = response.data
+      const { checkoutUrl } = response.data
 
-      window.location.href = checkourUrl
+      window.location.href = checkoutUrl
     } catch (error) {
       alert('Falha ao redirecionar para o checkout')
       console.log('handleBuyProductError', error)
